@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Bigodinho Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-over">
+            <h1>Você conseguiu <span id="score">0</span> fogões</h1>
+            <button id="restart-button">Tentar novamente</button>
+        </div>
+        <div id="game-start" class="hidden">
+            <h1>Bigodinho</h1>
+            <button id="start-button">Começar</button>
+        </div>
+    </div>
+    <audio id="jump-sound" src="jump.mp3"></audio>
+    <audio id="point-sound" src="point score.mp3"></audio>
+    <audio id="game-over-sound" src="end game.mp3"></audio>
+    <audio id="background-music" src="background music.mp3" loop></audio>
+    <script src="game.js"></script>
+</body>
+</html>
